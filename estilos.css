@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&family=Montserrat:wght@500&family=Oswald:wght@200&family=Patrick+Hand+SC&family=Sriracha&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+title{
+    background-color: rgb(218, 156, 225);
+}
+body{
+    background-color: #f0ae90;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+
+}
+/*cambiar color fondo body*/
+header{
+    height: 80px;
+    width: 100%;
+    background-color:  rgb(218, 156, 225);
+    font-family: 'Mansalva', cursive;
+    font-size: 50px;
+    color: honeydew;
+    margin-top:2px;
+
+}
+.logo{
+    color: honeydew;
+    margin-top:2px;
+    margin-left: 40px;
+    text-align: left;
+    font-size: 27px;
+}
+.logo a{
+    text-decoration: none;
+    color: honeydew;
+    margin-top:2px;
+    margin-left: 40px;
+    text-align: left;
+    font-size: 45px;
+}
+
+.nav-link{
+    color: rgb(49, 5, 93);
+}
+.navbar{
+    background-color: rgb(218, 156, 225);
+}
+.nav-link:hover{
+    color: whitesmoke;
+}
+.menu{ 
+    word-spacing: 3px;
+    margin-left: 10px;
+}
+.menu a{ 
+    color: rgb(69, 8, 75);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    
+}
+.menu a:hover{
+    color: rgb(245, 237, 242);
+}
+
+
+h2{
+    font-family: 'Patrick Hand SC', cursive;
+    font-variant: small-caps;
+    color:rgb(49, 5, 93);
+    display: inline;
+    font-size: 30px;
+}
+h2 a{
+    color: rgb(138, 13, 51);
+}
+a{
+    color: rgb(0, 0, 0);
+}
+ul{
+
+    border: 2px;
+}
+
+.menu ul li{
+    width: 25%;
+}    
+
+ li{
+    font-size: 2rem;
+ }
+
+ ul ul li{
+    font-size: 25px;
+    
+ }
+ ul ul li a{
+    color: rgba(189, 54, 207, 0.363);
+}
+ ul li:hover ul{
+
+    background-color: rgba(215, 167, 221, 0.416);
+ }
+li a{
+    text-decoration: none;
+}
+
+/*REVISAR UL UL*/
+main{
+    height: 1000px;
+    width: 100%;
+    background-image:url(./multimedia/sunset.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+#call{
+    color: azure;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+    text-align: right;
+    background-color: rgba(233, 150, 122, 0.363);
+    padding: 20px;
+    border: 2px double rgb(237, 210, 164);
+    border-radius: 8px;
+    font-size: 15PX;
+
+}
+#call a{
+    text-decoration: underline wavy;
+    color: whitesmoke;
+    margin-top: 3px;
+}
+.call a:hover{
+    color:rgb(54, 4, 19)
+}
+.primeraDiv{
+    width: 100%;
+    height: 450px;
+}
+
+.textoindex{
+    font-family: 'Patrick Hand SC', cursive;
+    text-align: center;
+    color: rgb(61, 57, 63);
+    font-size: 25px;
+    padding: 10px;
+}
+.textoindex:hover{
+    font-weight: bold;
+}
+.turno{
+    text-transform: uppercase;
+    background-color: rgb(236, 197, 22);
+    height: 25px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}    
+/*cambiar fuente turnos y centrar*/
+.textosfotos{
+    color: rgba(88, 81, 86, 0.945);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+    text-align: center ;
+    padding-top:15px;
+}
+
+.segundot{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+    color: rgb(60, 5, 66);
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 5px;
+}
+.servicios{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: 'Patrick Hand SC', cursive;
+    text-align: center;
+}
+.servicios li{
+    font-size: 30px;
+    text-align: center;
+    margin-left:70px;
+}
+
+
+/** Redes **/ 
+.redes a{
+    font-size: 25px;
+    color: rgb(46, 2, 50);
+    letter-spacing: 40px
+}
+/**contacto**/
+.main__contacto{
+    text-align: center;
+    font-family: 'Patrick Hand SC', cursive;
+    color: purple;
+    word-spacing: 7px;
+    font-size: 25px;
+}
+input{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(109, 28, 125);
+}
+/**html encuentro**/
+iframe{
+    position:center;
+}
+/**Sobre mai**/
+.sobre{
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(78, 30, 79);
+    font-weight: bold;
+    padding: 20px;
+    margin-right: 55%;
+    margin-left: 25px;
+}
+.imgSobre{    
+    margin-left: 50px;
+    border-radius: 5px;
+    padding: 10px;
+    float: right;
+    margin-right: 25px;
+    display: block;
+}    
+
+.imgSobre:hover{
+    border: 5px solid rgba(187, 124, 212, 0.714);
+    width: 350px;
+    height: 180;
+    border-radius: 5px;
+}
+.descripcion{
+    padding-top: 5%;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+h3{ 
+    color: rgb(131, 21, 104);
+    border: dotted rgb(218, 156, 225);
+    padding: 1%;
+}
+footer{
+    background-color: rgb(218, 156, 225);
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0px;
+}  
+footer p{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(83, 5, 99);
+}
+@media only screen and (min-width:480px){
+    .textoindex{
+        font-size: 25px;
+    }
+}
+@media only screen and (min-width:768px){
+    .textoindex{
+        font-size: 30px;
+    }
+   
+}
