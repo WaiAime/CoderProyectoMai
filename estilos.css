@@ -42,6 +42,7 @@ header{
 
 .nav-link{
     color: rgb(49, 5, 93);
+    font-size: 20px;
 }
 .navbar{
     background-color: rgb(218, 156, 225);
@@ -49,20 +50,14 @@ header{
 .nav-link:hover{
     color: whitesmoke;
 }
-.menu{ 
-    word-spacing: 3px;
-    margin-left: 10px;
-}
-.menu a{ 
-    color: rgb(69, 8, 75);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 30px;
-    
-}
-.menu a:hover{
-    color: rgb(245, 237, 242);
-}
 
+.dropdown-item{
+    font-size: 20px;
+
+}
+.dropdown-item:hover{
+    color: rgb(206, 17, 133);
+}
 
 h2{
     font-family: 'Patrick Hand SC', cursive;
