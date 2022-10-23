@@ -9,6 +9,8 @@ title{
 }
 body{
     background-color: #f0ae90;
+    background-image: linear-gradient(#f0ae90, 80%, rgba(191, 63, 223, 0.39));
+
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: relative;
 
@@ -148,14 +150,13 @@ h1{
 .textoindex:hover{
     font-weight: bold;
 }
-.turno{
-    text-transform: uppercase;
-    background-color: rgb(236, 197, 22);
-    height: 25px;
+marquee{
+    background-color: rgb(229, 211, 238);
+    height: 30px;
     width: 100%;
     text-align: center;
     font-size: 25px;
-    color: whitesmoke;
+    color: rgb(77, 5, 105);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }    
@@ -166,6 +167,10 @@ h1{
     letter-spacing: 0.5px;
     text-align: center ;
     padding-top:15px;
+    transition: font-size 0.5s;
+}
+.textosfotos:hover{
+    font-size: 20px;
 }
 
 .segundot{
@@ -241,6 +246,9 @@ iframe{
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
+}
+.img-fluid{
+    border-radius: 20px;
 }
 
 h3{ 
