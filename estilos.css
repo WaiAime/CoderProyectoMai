@@ -17,15 +17,16 @@ body{
 }
 /*cambiar color fondo body*/
 header{
-    height: 80px;
+    height: 1.3em;
     width: 100%;
     background-color:  rgb(218, 156, 225);
     font-family: 'Mansalva', cursive;
     font-size: 50px;
     color: honeydew;
     margin-top:2px;
-
+    letter-spacing: 0.2em;
 }
+
 .logo{
     color: honeydew;
     margin-top:2px;
@@ -123,8 +124,8 @@ h1{
     background-color: rgba(233, 150, 122, 0.363);
     padding: 20px;
     border: 2px double rgb(237, 210, 164);
-    border-radius: 8px;
-    font-size: 15PX;
+    border-radius: 1em;
+    font-size: 15px;
 
 }
 #call a{
@@ -160,7 +161,6 @@ marquee{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }    
-/*cambiar fuente turnos y centrar*/
 .textosfotos{
     color: rgba(88, 81, 86, 0.945);
     font-family: 'Montserrat', sans-serif;
@@ -248,7 +248,7 @@ iframe{
     padding-right: 5%;
 }
 .img-fluid{
-    border-radius: 20px;
+    border-radius: 1em;
 }
 
 h3{ 
@@ -275,6 +275,7 @@ footer p{
     .textoindex{
         font-size: 25px;
     }
+
 }
 @media only screen and (min-width:768px){
     .textoindex{
