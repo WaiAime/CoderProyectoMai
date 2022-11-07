@@ -1,0 +1,296 @@
+$colorfondo1: rgb(218, 156, 225);
+$colorfuente1: rgb(46, 2, 50);
+$colorfuente2: rgb(49, 5, 93);
+$font1: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$font2:'Montserrat', sans-serif;
+$colorH: honeydew;
+
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&family=Montserrat:wght@500&family=Oswald:wght@200&family=Patrick+Hand+SC&family=Sriracha&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+title{
+    background-color: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-color: #f0ae90;
+    background-image: linear-gradient(#f0ae90, 80%, rgba(191, 63, 223, 0.39));
+    font-family: $font1;
+    position: relative;
+}
+/*cambiar color fondo body*/
+header{
+    width: 100%;
+    background-color: $colorfondo1;
+    font-family: 'Mansalva', cursive;
+    font-size: 35px;
+    color: $colorH;
+    margin-top:2px;
+    letter-spacing: 0.2em;
+    padding-left: 1em;
+        & a{
+            text-decoration: none;
+            color: $colorH;
+            margin-top:2px;
+            margin-left: 1em;
+            text-align: left;
+            font-size: 35px;
+    }
+}
+
+.nav-link{
+    color: $colorfuente2;
+    font-size: 20px;
+        &:hover{
+            color: $colorH;
+        }
+}
+.navbar{
+    background-color: $colorfondo1;
+}
+.dropdown-item{
+    font-size: 20px;
+        &:hover{
+            color: rgb(206, 17, 133);
+        }
+}
+
+h2{
+    font-family: 'Patrick Hand SC', cursive;
+    font-variant: small-caps;
+    color: $colorfuente2;
+    display: inline;
+    font-size: 30px;
+        & a{
+            color: rgb(138, 13, 51);
+        }
+}
+
+a{
+    color: rgb(0, 0, 0);
+}
+ul{
+
+    border: 2px;
+}
+
+.menu ul li{
+    width: 25%;
+}    
+
+li{
+    font-size: 2rem;
+}
+
+ul ul li{
+    font-size: 25px;
+}
+ul ul li a{
+    color: rgba(189, 54, 207, 0.363);
+}
+ul li:hover ul{
+    background-color: rgba(215, 167, 221, 0.416);
+}
+
+li a{
+    text-decoration: none;
+}
+.row{
+    padding: 0.8em;
+}
+/*REVISAR UL UL*/
+main{
+    width: 100%;
+    background-image:url(./multimedia/sunset.jpg);
+    background-size: cover;
+}
+
+h1{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+#call{
+    color: azure;
+    font-family: $font2;
+    letter-spacing: 0.5px;
+    text-align: right;
+    background-color: rgba(233, 150, 122, 0.363);
+    padding: 20px;
+    border: 2px double rgb(237, 210, 164);
+    border-radius: 1em;
+    font-size: 18px;
+        & a{
+            text-decoration: underline wavy;
+            color: $colorH;
+            margin-top: 3px;
+            &:hover{
+                color:rgb(54, 4, 19)
+            }
+        }
+}
+
+.primeraDiv{
+    width: 100%;
+    height: 450px;
+}
+
+.textoindex{
+    font-family: 'Patrick Hand SC', cursive;
+    text-align: center;
+    color: $colorfuente1;
+    font-size: 25px;
+    padding: 10px;
+        &:hover{
+            font-size: 35px;
+    }
+}
+
+marquee{
+    background-color: rgb(255, 244, 184);
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(172, 28, 160);
+    font-family: $font1;
+
+}    
+.textosfotos{
+    color: rgba(88, 81, 86, 0.945);
+    font-family: $font2;
+    letter-spacing: 0.5px;
+    text-align: center ;
+    padding-top:15px;
+    transition: font-size 0.5s;
+        &:hover{
+            font-weight: bold;
+        }
+}
+.segundot{
+    font-family: $font1;
+    font-variant: small-caps;
+    color: rgb(60, 5, 66);
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 5px;
+}
+.servicios{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: 'Patrick Hand SC', cursive;
+    text-align: center;
+    .servicios li{
+        font-size: 30px;
+        text-align: center;
+        margin-left:70px;
+    }
+}
+
+
+
+/** Redes **/ 
+.redes a{
+    font-size: 25px;
+    color: $colorfuente1;
+    letter-spacing: 40px
+}
+/**contacto**/
+.main__contacto{
+    text-align: center;
+    font-family: 'Patrick Hand SC', cursive;
+    color: purple;
+    word-spacing: 7px;
+    font-size: 25px;
+}
+input{
+    font-family: $font1;
+    color: rgb(109, 28, 125);
+}
+/**html encuentro**/
+iframe{
+    position:center;
+}
+/**Sobre mai**/
+.sobre{
+    text-align: justify;
+    font-family: $font1;
+    color: rgb(78, 30, 79);
+    font-weight: bold;
+    padding: 20px;
+    margin-right: 55%;
+    margin-left: 25px;
+}
+.imgSobre{    
+    margin-left: 50px;
+    border-radius: 5px;
+    padding: 10px;
+    float: right;
+    margin-right: 25px;
+    display: block;
+        &:hover{
+            border: 5px solid rgba(187, 124, 212, 0.714);
+            width: 350px;
+            height: 180;
+            border-radius: 5px;
+        }
+}    
+
+
+.descripcion{
+    padding-top: 5%;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.img-fluid{
+    border-radius: 1em;
+}
+
+h3{ 
+    color: rgb(131, 21, 104);
+    border: dotted rgb(218, 156, 225);
+    padding: 1%;
+}
+
+footer{
+    background-color: $colorfondo1;
+    text-align: center;
+    font-size: 20px;
+    font-family: $font2;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0px;
+        & p{
+            text-align: center;
+            font-size: 20px;
+            font-family: $font2;
+            color: rgb(83, 5, 99);
+        }
+}  
+
+@media only screen and (min-width:480px){
+    .textoindex{
+        font-size: 25px;
+    }
+
+}
+@media only screen and (min-width:768px){
+    .header{
+        font-size: 45px;
+    }
+    .header a{
+        font-size: 45px;
+    }
+
+    .textoindex{
+        font-size: 30px;
+    }
+    .textosfotos{
+        font-size: 21px;
+    }
+}
