@@ -12,7 +12,14 @@ $colorH: honeydew;
     padding: 0%;
     box-sizing: border-box;
 }
-
+@mixin size ($height, $width) {
+    height: $height;
+    width: $width;
+}
+@mixin margins ($marginL, $marginr) {
+    margin-left: $marginL;
+    margin-right: $marginr;
+}
 
 title{
     background-color: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -40,6 +47,9 @@ header{
             margin-left: 1em;
             text-align: left;
             font-size: 35px;
+                &:hover{
+                    color: $colorfuente2;
+                }
     }
 }
 
@@ -135,8 +145,7 @@ h1{
 }
 
 .primeraDiv{
-    width: 100%;
-    height: 450px;
+    @include size(100%, 450px)
 }
 
 .textoindex{
@@ -152,8 +161,7 @@ h1{
 
 marquee{
     background-color: rgb(255, 244, 184);
-    height: 30px;
-    width: 100%;
+    @include size(30px, 100%);
     text-align: center;
     font-size: 25px;
     color: rgb(172, 28, 160);
@@ -222,20 +230,17 @@ iframe{
     color: rgb(78, 30, 79);
     font-weight: bold;
     padding: 20px;
-    margin-right: 55%;
-    margin-left: 25px;
+    @include margins(25px, 55%);
 }
 .imgSobre{    
-    margin-left: 50px;
     border-radius: 5px;
     padding: 10px;
     float: right;
-    margin-right: 25px;
     display: block;
+    @include margins(50px, 25px);
         &:hover{
             border: 5px solid rgba(187, 124, 212, 0.714);
-            width: 350px;
-            height: 180;
+            @include size(180, 350px);
             border-radius: 5px;
         }
 }    
@@ -251,7 +256,7 @@ iframe{
     border-radius: 1em;
 }
 
-h3{ 
+h3{     
     color: rgb(131, 21, 104);
     border: dotted rgb(218, 156, 225);
     padding: 1%;
