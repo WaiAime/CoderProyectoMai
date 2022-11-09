@@ -161,11 +161,17 @@ h1{
 
 marquee{
     background-color: rgb(255, 244, 184);
-    @include size(30px, 100%);
-    text-align: center;
-    font-size: 25px;
-    color: rgb(172, 28, 160);
-    font-family: $font1;
+        & a{
+            @include size(30px, 100%);
+            text-align: center;
+            font-size: 25px;
+            color: rgb(172, 28, 160);
+            font-family: $font1;
+            text-decoration: none;
+                &:hover{
+                    color: $colorfondo1;
+                }
+        }
 
 }    
 .textosfotos{
@@ -199,8 +205,6 @@ marquee{
     }
 }
 
-
-
 /** Redes **/ 
 .redes a{
     font-size: 25px;
@@ -227,7 +231,7 @@ iframe{
 .sobre{
     text-align: justify;
     font-family: $font1;
-    color: rgb(37, 214, 37);
+    color: rgb(78, 30, 79);
     font-weight: bold;
     padding: 0.5em;
     @include margins(2%, 5%);
@@ -235,9 +239,6 @@ iframe{
 .imgSobre{    
     border-radius: 5px;
     padding: 10px;
-    float: right;
-    display: block;
-    @include margins(50px, 25px);
         &:hover{
             border: 5px solid rgba(187, 124, 212, 0.714);
             @include size(180, 350px);
