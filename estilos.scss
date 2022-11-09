@@ -204,7 +204,6 @@ marquee{
         margin-left:70px;
     }
 }
-
 /** Redes **/ 
 .redes a{
     font-size: 25px;
@@ -245,7 +244,6 @@ iframe{
             border-radius: 5px;
         }
 }    
-
 .descripcion{
     padding-top: 5%;
     text-align: center;
@@ -255,13 +253,11 @@ iframe{
 .img-fluid{
     border-radius: 1em;
 }
-
 h3{     
     color: rgb(131, 21, 104);
     border: dotted rgb(218, 156, 225);
     padding: 1%;
 }
-
 footer{
     background-color: $colorfondo1;
     text-align: center;
@@ -277,7 +273,6 @@ footer{
             color: rgb(83, 5, 99);
         }
 }  
-
 @media only screen and (min-width:480px){
     .textoindex{
         font-size: 25px;
