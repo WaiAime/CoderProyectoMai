@@ -228,9 +228,9 @@ iframe {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: rgb(78, 30, 79);
   font-weight: bold;
-  padding: 20px;
-  margin-left: 25px;
-  margin-right: 55%;
+  padding: 0.5em;
+  margin-left: 2%;
+  margin-right: 5%;
 }
 
 .imgSobre {

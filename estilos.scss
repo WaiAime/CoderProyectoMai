@@ -229,8 +229,8 @@ iframe{
     font-family: $font1;
     color: rgb(78, 30, 79);
     font-weight: bold;
-    padding: 20px;
-    @include margins(25px, 55%);
+    padding: 0.5em;
+    @include margins(2%, 5%);
 }
 .imgSobre{    
     border-radius: 5px;
@@ -244,7 +244,6 @@ iframe{
             border-radius: 5px;
         }
 }    
-
 
 .descripcion{
     padding-top: 5%;
