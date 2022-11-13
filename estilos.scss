@@ -12,6 +12,9 @@ $colorH: honeydew;
     padding: 0%;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 @mixin size ($height, $width) {
     height: $height;
     width: $width;
@@ -160,7 +163,7 @@ h1{
 }
 
 marquee{
-    background-color: rgb(255, 244, 184);
+    background-color: rgba(255, 244, 184, 0.623);
         & a{
             @include size(30px, 100%);
             text-align: center;
@@ -174,8 +177,16 @@ marquee{
         }
 
 }    
+.txtdescipcion{
+    color: rgb(131, 21, 104);
+    border: dotted rgb(218, 156, 225);
+    padding: 1%;
+
+}
+
 .textosfotos{
-    color: rgba(88, 81, 86, 0.945);
+    color: $colorH;
+    text-shadow: 1px 1px 2px $colorfuente1;
     font-family: $font2;
     letter-spacing: 0.5px;
     text-align: center ;
@@ -183,6 +194,13 @@ marquee{
     transition: font-size 0.5s;
         &:hover{
             font-weight: bold;
+        }
+}
+.enlaceindex{
+    text-decoration: none;
+    color: $colorH;
+        &:hover{
+            color: $colorfuente2;
         }
 }
 .segundot{
@@ -253,11 +271,7 @@ iframe{
 .img-fluid{
     border-radius: 1em;
 }
-h3{     
-    color: rgb(131, 21, 104);
-    border: dotted rgb(218, 156, 225);
-    padding: 1%;
-}
+
 footer{
     background-color: $colorfondo1;
     text-align: center;
@@ -273,6 +287,17 @@ footer{
             color: rgb(83, 5, 99);
         }
 }  
+.subir{
+    color: $colorH;
+    position: fixed;
+    bottom: 1em;
+    right: 2em;
+    font-size: 2em;
+        &:hover{
+            color: $colorfondo1
+        }
+    
+}
 @media only screen and (min-width:480px){
     .textoindex{
         font-size: 25px;

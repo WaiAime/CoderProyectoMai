@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 title {
   background-color: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
@@ -154,7 +158,7 @@ h1 {
 }
 
 marquee {
-  background-color: rgb(255, 244, 184);
+  background-color: rgba(255, 244, 184, 0.623);
 }
 marquee a {
   height: 30px;
@@ -169,8 +173,15 @@ marquee a:hover {
   color: rgb(218, 156, 225);
 }
 
+.txtdescipcion {
+  color: rgb(131, 21, 104);
+  border: dotted rgb(218, 156, 225);
+  padding: 1%;
+}
+
 .textosfotos {
-  color: rgba(88, 81, 86, 0.945);
+  color: honeydew;
+  text-shadow: 1px 1px 2px rgb(46, 2, 50);
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.5px;
   text-align: center;
@@ -179,6 +190,14 @@ marquee a:hover {
 }
 .textosfotos:hover {
   font-weight: bold;
+}
+
+.enlaceindex {
+  text-decoration: none;
+  color: honeydew;
+}
+.enlaceindex:hover {
+  color: rgb(49, 5, 93);
 }
 
 .segundot {
@@ -261,12 +280,6 @@ iframe {
   border-radius: 1em;
 }
 
-h3 {
-  color: rgb(131, 21, 104);
-  border: dotted rgb(218, 156, 225);
-  padding: 1%;
-}
-
 footer {
   background-color: rgb(218, 156, 225);
   text-align: center;
@@ -281,6 +294,17 @@ footer p {
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   color: rgb(83, 5, 99);
+}
+
+.subir {
+  color: honeydew;
+  position: fixed;
+  bottom: 1em;
+  right: 2em;
+  font-size: 2em;
+}
+.subir:hover {
+  color: rgb(218, 156, 225);
 }
 
 @media only screen and (min-width: 480px) {
