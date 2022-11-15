@@ -78,7 +78,8 @@ h2{
     font-variant: small-caps;
     color: $colorfuente2;
     display: inline;
-    font-size: 30px;
+    font-size: 2.5em;
+    text-shadow: rgba(233, 225, 243, 0.863) 1px 1px ;
         & a{
             color: rgb(138, 13, 51);
         }
@@ -88,7 +89,6 @@ a{
     color: rgb(0, 0, 0);
 }
 ul{
-
     border: 2px;
 }
 
@@ -175,13 +175,13 @@ marquee{
                     color: $colorfondo1;
                 }
         }
-
 }    
+
 .txtdescipcion{
     color: rgb(131, 21, 104);
     border: dotted rgb(218, 156, 225);
     padding: 1%;
-
+    font-size: 1.3em;
 }
 
 .textosfotos{
@@ -197,10 +197,10 @@ marquee{
         }
 }
 .enlaceindex{
-    text-decoration: none;
+    text-decoration: underline dotted;
     color: $colorH;
         &:hover{
-            color: $colorfuente2;
+            color: $colorfondo1;
         }
 }
 .segundot{
@@ -251,6 +251,7 @@ iframe{
     color: rgb(78, 30, 79);
     font-weight: bold;
     padding: 0.5em;
+    font-size: 1.3em;
     @include margins(2%, 5%);
 }
 .imgSobre{    
@@ -296,7 +297,10 @@ footer{
         &:hover{
             color: $colorfondo1
         }
-    
+}
+.btnc{
+    border-radius: 1em;
+    border-color: antiquewhite;
 }
 @media only screen and (min-width:480px){
     .textoindex{

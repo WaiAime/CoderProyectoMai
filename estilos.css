@@ -67,7 +67,8 @@ h2 {
   font-variant: small-caps;
   color: rgb(49, 5, 93);
   display: inline;
-  font-size: 30px;
+  font-size: 2.5em;
+  text-shadow: rgba(233, 225, 243, 0.863) 1px 1px;
 }
 h2 a {
   color: rgb(138, 13, 51);
@@ -177,6 +178,7 @@ marquee a:hover {
   color: rgb(131, 21, 104);
   border: dotted rgb(218, 156, 225);
   padding: 1%;
+  font-size: 1.3em;
 }
 
 .textosfotos {
@@ -193,11 +195,11 @@ marquee a:hover {
 }
 
 .enlaceindex {
-  text-decoration: none;
+  text-decoration: underline dotted;
   color: honeydew;
 }
 .enlaceindex:hover {
-  color: rgb(49, 5, 93);
+  color: rgb(218, 156, 225);
 }
 
 .segundot {
@@ -254,6 +256,7 @@ iframe {
   color: rgb(78, 30, 79);
   font-weight: bold;
   padding: 0.5em;
+  font-size: 1.3em;
   margin-left: 2%;
   margin-right: 5%;
 }
@@ -305,6 +308,11 @@ footer p {
 }
 .subir:hover {
   color: rgb(218, 156, 225);
+}
+
+.btnc {
+  border-radius: 1em;
+  border-color: antiquewhite;
 }
 
 @media only screen and (min-width: 480px) {
