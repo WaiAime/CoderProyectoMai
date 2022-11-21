@@ -1,6 +1,7 @@
 $colorfondo1: rgb(218, 156, 225);
 $colorfuente1: rgb(46, 2, 50);
 $colorfuente2: rgb(108, 60, 156);
+$colorfuente3: rgb(109, 28, 125);
 $font1: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 $font2:'Montserrat', sans-serif;
 $colorH: honeydew;
@@ -14,6 +15,8 @@ $colorH: honeydew;
 }
 html{
     scroll-behavior: smooth;
+
+
 }
 @mixin size ($height, $width) {
     height: $height;
@@ -40,7 +43,6 @@ header{
     font-family: 'Mansalva', cursive;
     font-size: 35px;
     color: $colorH;
-    margin-top:2px;
     letter-spacing: 0.2em;
     padding-left: 1em;
     text-shadow: 1px 2px 3px rgba(117, 18, 209, 0.849);
@@ -56,7 +58,6 @@ header{
                 }
     }
 }
-
 .nav-link{
     color: $colorfuente2;
     font-size: 20px;
@@ -119,8 +120,9 @@ h1{
 .segundot{
     font-family: $font1;
     font-variant: small-caps;
-    color: rgb(82, 6, 97);
-    text-shadow: rgb(207, 205, 197) 1px 1px;
+    color: $colorH;
+    text-shadow: 1px 1px rgb(102, 0, 116);
+    font-weight: bold;
     text-align: center;
     font-size: 45px;
     letter-spacing: 5px;
@@ -131,7 +133,7 @@ h2{
     color: rgb(121, 9, 136);
     display: inline;
     font-size: 3em;
-    text-shadow: rgba(236, 190, 61, 0.658) 1px 1px ;
+    text-shadow: rgba(235, 231, 222, 0.658) 1px 1px ;
         & a{
             color: rgb(138, 13, 51);
         }
@@ -188,7 +190,7 @@ marquee{
 
 .textosfotos{
     color: $colorH;
-    text-shadow: 1px 1px 2px $colorfuente1;
+    text-shadow: 1px 1px 1px $colorfuente1;
     font-family: $font2;
     letter-spacing: 0.5px;
     text-align: center ;
@@ -206,7 +208,6 @@ marquee{
         }
 }
 
-
 .servicios{
     color: rgb(255, 255, 255);
     text-transform: uppercase;
@@ -223,14 +224,14 @@ marquee{
 /**contacto**/
 .main__contacto{
     text-align: center;
-    font-family: 'Patrick Hand SC', cursive;
+    font-family: $font2, cursive;
     color: purple;
-    word-spacing: 7px;
+    word-spacing: 6px;
     font-size: 25px;
 }
 input{
     font-family: $font1;
-    color: rgb(109, 28, 125);
+    color: $colorfuente3;
 }
 /**html encuentro**/
 iframe{
@@ -238,42 +239,47 @@ iframe{
 }
 /**Sobre mai**/
 .sobre{
-    text-align: justify;
     font-family: $font1;
-    color: rgb(78, 30, 79);
-    font-weight: bold;
+    color: $colorfuente3;
     padding: 0.5em;
+    margin-top: 2em;
     font-size: 1.3em;
     @include margins(2%, 5%);
 }
-.imgSobre{    
+.imgSobre{   
     border-radius: 5px;
     padding: 10px;
+    margin-top: 8em;
         &:hover{
-            border: 5px solid rgba(187, 124, 212, 0.714);
+            border: 2px solid rgba(187, 124, 212, 0.714);
             @include size(180, 350px);
             border-radius: 5px;
         }
 }    
+
+.row-mai{
+    background-color: #f1ddcc;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23f3c4f0' fill-opacity='0.4' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+
+}
 .descripcion{
     padding-top: 5%;
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: #f1d7f5;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23f3c4f0' fill-opacity='0.4' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
         .txtdescipcion{
-            color: rgb(121, 9, 136);
+            color: $colorfuente3;
             margin-bottom: 3em;
             font-size: 1.3em;
             padding: 1%;
             border-radius: 1em;
-            background-color: rgba(248, 208, 121, 0.219);
-            box-shadow: #957499 0.375rem 0.375rem 0.625rem ;
+            background-color: rgba(254, 246, 255, 0.452);
+            box-shadow: hsl(283, 72%, 79%) 0.375rem 0.375rem 0.625rem ;
     }
 }
 .img-fluid{
     border-radius: 1em;
+    
 }
 
 footer{
@@ -312,6 +318,7 @@ footer{
 }
 #consulta{
     text-align: center;
+    padding-top: 1em;
 }
 .btnc{
     padding: 0.2em;

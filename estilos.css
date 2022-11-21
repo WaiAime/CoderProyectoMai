@@ -27,7 +27,6 @@ header {
   font-family: "Mansalva", cursive;
   font-size: 35px;
   color: honeydew;
-  margin-top: 2px;
   letter-spacing: 0.2em;
   padding-left: 1em;
   text-shadow: 1px 2px 3px rgba(117, 18, 209, 0.849);
@@ -114,8 +113,9 @@ h1 {
 .segundot {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-variant: small-caps;
-  color: rgb(82, 6, 97);
-  text-shadow: rgb(207, 205, 197) 1px 1px;
+  color: honeydew;
+  text-shadow: 1px 1px rgb(102, 0, 116);
+  font-weight: bold;
   text-align: center;
   font-size: 45px;
   letter-spacing: 5px;
@@ -127,7 +127,7 @@ h2 {
   color: rgb(121, 9, 136);
   display: inline;
   font-size: 3em;
-  text-shadow: rgba(236, 190, 61, 0.658) 1px 1px;
+  text-shadow: rgba(235, 231, 222, 0.658) 1px 1px;
 }
 h2 a {
   color: rgb(138, 13, 51);
@@ -187,7 +187,7 @@ marquee a:hover {
 
 .textosfotos {
   color: honeydew;
-  text-shadow: 1px 1px 2px rgb(46, 2, 50);
+  text-shadow: 1px 1px 1px rgb(46, 2, 50);
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.5px;
   text-align: center;
@@ -222,9 +222,9 @@ marquee a:hover {
 /**contacto**/
 .main__contacto {
   text-align: center;
-  font-family: "Patrick Hand SC", cursive;
+  font-family: "Montserrat", sans-serif, cursive;
   color: purple;
-  word-spacing: 7px;
+  word-spacing: 6px;
   font-size: 25px;
 }
 
@@ -240,11 +240,10 @@ iframe {
 
 /**Sobre mai**/
 .sobre {
-  text-align: justify;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: rgb(78, 30, 79);
-  font-weight: bold;
+  color: rgb(109, 28, 125);
   padding: 0.5em;
+  margin-top: 2em;
   font-size: 1.3em;
   margin-left: 2%;
   margin-right: 5%;
@@ -253,12 +252,18 @@ iframe {
 .imgSobre {
   border-radius: 5px;
   padding: 10px;
+  margin-top: 8em;
 }
 .imgSobre:hover {
-  border: 5px solid rgba(187, 124, 212, 0.714);
+  border: 2px solid rgba(187, 124, 212, 0.714);
   height: 180;
   width: 350px;
   border-radius: 5px;
+}
+
+.row-mai {
+  background-color: #f1ddcc;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23f3c4f0' fill-opacity='0.4' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 .descripcion {
@@ -266,17 +271,15 @@ iframe {
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
-  background-color: #f1d7f5;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23f3c4f0' fill-opacity='0.4' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
 }
 .descripcion .txtdescipcion {
-  color: rgb(121, 9, 136);
+  color: rgb(109, 28, 125);
   margin-bottom: 3em;
   font-size: 1.3em;
   padding: 1%;
   border-radius: 1em;
-  background-color: rgba(248, 208, 121, 0.219);
-  box-shadow: #957499 0.375rem 0.375rem 0.625rem;
+  background-color: rgba(254, 246, 255, 0.452);
+  box-shadow: hsl(283deg, 72%, 79%) 0.375rem 0.375rem 0.625rem;
 }
 
 .img-fluid {
@@ -320,6 +323,7 @@ footer .redes a:hover {
 
 #consulta {
   text-align: center;
+  padding-top: 1em;
 }
 
 .btnc {
