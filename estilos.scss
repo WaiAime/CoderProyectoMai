@@ -2,11 +2,11 @@ $colorfondo1: rgb(218, 156, 225);
 $colorfuente1: rgb(46, 2, 50);
 $colorfuente2: rgb(108, 60, 156);
 $colorfuente3: rgb(109, 28, 125);
-$font1: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-$font2:'Montserrat', sans-serif;
+$font1: 'Mansalva', cursive;
+$font2: 'Raleway', sans-serif;
 $colorH: honeydew;
 
-@import url('https://fonts.googleapis.com/css2?family=Mansalva&family=Montserrat:wght@500&family=Oswald:wght@200&family=Patrick+Hand+SC&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&family=Montserrat:wght@500&family=Oswald:wght@200&family=Patrick+Hand+SC&family=Raleway&family=Sriracha&display=swap');
 
 *{
     margin: 0%;
@@ -15,8 +15,6 @@ $colorH: honeydew;
 }
 html{
     scroll-behavior: smooth;
-
-
 }
 @mixin size ($height, $width) {
     height: $height;
@@ -33,14 +31,14 @@ title{
 body{
     background-color: #f0ae90;
     background-image: linear-gradient(#f0ae90, 80%, rgba(191, 63, 223, 0.39));
-    font-family: $font1;
+    font-family: $font2;
     position: relative;
 }
 /*cambiar color fondo body*/
 header{
     width: 100%;
     background-color: $colorfondo1;
-    font-family: 'Mansalva', cursive;
+    font-family: $font1;
     font-size: 35px;
     color: $colorH;
     letter-spacing: 0.2em;
@@ -64,6 +62,7 @@ header{
         &:hover{
             color: $colorH;
         }
+
 }
 .navbar{
     background-color: $colorfondo1;
@@ -118,19 +117,19 @@ h1{
     margin-bottom: 5px;
 }
 .segundot{
-    font-family: $font1;
+    font-family: $font2;
     font-variant: small-caps;
     color: $colorH;
-    text-shadow: 1px 1px rgb(102, 0, 116);
+    text-shadow: 1px 1px rgb(63, 0, 71);
     font-weight: bold;
     text-align: center;
     font-size: 45px;
     letter-spacing: 5px;
 }
 h2{
-    font-family: 'Patrick Hand SC', cursive;
+    font-family: $font1;
     font-variant: small-caps;
-    color: rgb(121, 9, 136);
+    color: $colorfuente3    ;
     display: inline;
     font-size: 3em;
     text-shadow: rgba(235, 231, 222, 0.658) 1px 1px ;
@@ -163,7 +162,7 @@ h2{
 }
 
 .textoindex{
-    font-family: 'Patrick Hand SC', cursive;
+    font-family: $font2;
     text-align: center;
     color: $colorfuente1;
     font-size: 25px;
@@ -180,7 +179,7 @@ marquee{
             text-align: center;
             font-size: 25px;
             color: rgb(172, 28, 160);
-            font-family: $font1;
+            font-family: $font2;
             text-decoration: none;
                 &:hover{
                     color: $colorfondo1;
@@ -190,7 +189,7 @@ marquee{
 
 .textosfotos{
     color: $colorH;
-    text-shadow: 1px 1px 1px $colorfuente1;
+    text-shadow: 1px 1px 1px  $colorfuente1;
     font-family: $font2;
     letter-spacing: 0.5px;
     text-align: center ;
@@ -198,6 +197,8 @@ marquee{
     transition: font-size 0.5s;
         &:hover{
             font-weight: bold;
+            color: $colorfuente1;
+
         }
 }
 .enlaceindex{
@@ -230,7 +231,7 @@ marquee{
     font-size: 25px;
 }
 input{
-    font-family: $font1;
+    font-family: $font2;
     color: $colorfuente3;
 }
 /**html encuentro**/
@@ -239,7 +240,7 @@ iframe{
 }
 /**Sobre mai**/
 .sobre{
-    font-family: $font1;
+    font-family: $font2;
     color: $colorfuente3;
     padding: 0.5em;
     margin-top: 2em;
@@ -275,6 +276,7 @@ iframe{
             border-radius: 1em;
             background-color: rgba(254, 246, 255, 0.452);
             box-shadow: hsl(283, 72%, 79%) 0.375rem 0.375rem 0.625rem ;
+            font-family: $font2;
     }
 }
 .img-fluid{
