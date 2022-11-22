@@ -132,7 +132,7 @@ h2{
     font-variant: small-caps;
     color: $colorfuente3    ;
     display: inline;
-    font-size: 3em;
+    font-size: 2.2em;
     text-shadow: rgba(235, 231, 222, 0.658) 1px 1px ;
         & a{
             color: rgb(138, 13, 51);
@@ -166,7 +166,7 @@ h2{
     font-family: $font2;
     text-align: center;
     color: $colorfuente1;
-    font-size: 25px;
+    font-size: 22px;
     padding: 10px;
         &:hover{
             font-size: 35px;
@@ -199,6 +199,7 @@ marquee{
         &:hover{
             font-weight: bold;
             color: $colorfuente1;
+            text-shadow: none;
 
         }
 }
@@ -278,6 +279,9 @@ iframe{
             background-color: rgba(254, 246, 255, 0.452);
             box-shadow: hsl(283, 72%, 79%) 0.375rem 0.375rem 0.625rem ;
             font-family: $font2;
+                & img{
+                    width: 10em; 
+                }
     }
 }
 .img-fluid{
@@ -329,11 +333,24 @@ footer{
     border-color: antiquewhite;
     font-size: 0.8em;
 }
+
 @media only screen and (min-width:480px){
     .textoindex{
         font-size: 25px;
     }
-
+    h2{
+        font-size: 3em;
+    }
+    #consulta{
+        width: 15em;
+    }
+    .descripcion{
+            .txtdescipcion{
+                & img{
+                    width: 15em; 
+                    }
+        }
+    }
 }
 @media only screen and (min-width:768px){
     .header{
