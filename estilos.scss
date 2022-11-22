@@ -16,6 +16,7 @@ $colorH: honeydew;
 html{
     scroll-behavior: smooth;
 }
+
 @mixin size ($height, $width) {
     height: $height;
     width: $width;
